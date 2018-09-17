@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.sensor.test.linker.common.AccelerometerData" table="sensor1-test">
+
+        <meta attribute="class-description">
+            This class contains the accelerometer accelerometer.
+        </meta>
+
+
+        <id name="num" column="num" type="int"/>
+        <property name="deviceuid" column="deviceuid" type="string"/>
+        <property name="x" column="x" type="double"/>
+        <property name="y" column="y" type="double"/>
+        <property name="z" column="z" type="double"/>
+        <property name="submitDate" column="submitDate" type="java.sql.Date"/>
+
+    </class>
+</hibernate-mapping>
